@@ -1,0 +1,294 @@
+:root {
+			--bg-color1: white;
+			--bg-color2: #80dfff;
+			--font-color1: black;
+			--font-color2: #00334d;
+			--font-color3: #00334d;
+			--font-color4: black;
+			--font-color5: black;
+			--focus-bg: #00334d;
+			--focus-color: white;
+		}
+		
+		[data-theme="dark"] {
+			--bg-color1: #1D1E22;
+			--bg-color2: black;
+			--font-color1: #F41E2B;
+			--font-color2: #00569C;
+			--font-color3: #F41E2B;
+			--font-color4: white;
+			--font-color5: #00569C;
+			--focus-bg: white;
+			--focus-color: black;
+		}
+		
+		body{
+			
+		}
+		
+		#topBar{
+			background-color: var(--bg-color1);	
+			height: 55px;
+			font-weight: 400;
+			font-size: 20px;
+		}
+		
+		.navbar-brand{
+			color: var(--font-color1);
+		}
+		
+		#logoX{
+			margin: none;
+			padding: none;
+			position: relative;
+			left: -3px;
+			top: -2px;
+			height: 40px;
+			width: 45px;
+			align: left;
+		}
+		
+		.togglerIcon{
+			color: var(--font-color1);
+		}
+		
+		.togglerIcon:hover{
+			color: var(--font-color2);
+		}
+		
+		.logos{
+			color: var(--font-color3);
+			margin-right: 15px;
+		}
+		
+		.logos:hover{
+			color: var(--font-color5);
+		}
+		
+		.nav-link{
+			color: var(--font-color1);
+		}
+		
+		
+		#darkOpt{
+			color: #F41E2B;
+			background-color: #1D1E22;
+			font-size: 16px;
+			font-weight: 500;
+		}
+		
+		#darkOpt:hover{
+			background-color: black;
+			
+		}
+		
+		#lightOpt{
+			color: black;
+			background-color: white;
+			font-size: 16px;
+			font-weight: 500;
+		}
+		
+		#lightOpt:hover{
+			background-color: #80dfff;
+		}
+		
+		#infoPage{
+			position: relative;
+			color: black;
+			
+			
+		}
+		#main{
+			margin-top: 55px;
+			
+		}
+		
+		.first{
+				position: relative;
+				margin: 0 auto;
+				height: 18px;
+				background-color: var(--bg-color2);	;
+			}
+			
+		.second{
+			position: relative;
+			margin: 0 auto;
+			height: 55px;
+			background-color: var(--bg-color1);	;
+			}
+			
+		.inner{
+				background-color: var(--bg-color2);	;
+				width: 500px;
+				height: 55px;
+				border-radius: 47%;
+				margin: 0 auto;
+				padding-top: 20px
+				
+			}	
+		
+			.button1{
+				all: unset;
+				color: var(--font-color3);
+				background: var(--bg-color2);
+				height: 20px;
+				}
+				
+		.button1:hover {
+				background-color: var(--bg-color1);
+				color: var(--font-color4);
+				border-radius: 45%;
+			}
+
+		.button1:focus {
+				background-color: var(--focus-bg);
+				color: var(--focus-color);
+				border-radius: 45%;
+			}
+		
+			.three,
+			.three-1{
+				position: relative;
+				align: center;
+				font-size: 18px;
+				font-family: 'Lato', sans-serif;
+				color: var(--font-color3);
+				float: left;
+				padding: 0px 25px 0px 25px; 
+				border-left: 1px white solid;
+				margin-top: -20px;
+				
+				
+			}
+			
+			.three-1{
+				border-left: none;
+				position:relative;
+				left: 10px;
+				margin-right: 10px;
+			}
+		
+		
+		
+		#tabs{
+				font-size: 15px;
+				color: var(--font-color1);
+				font-family: "Times New Roman", Times, serif;
+				background-color: var(--bg-color1);
+				position:absolute;
+				;
+				margin:0;
+				padding:0;
+				width:100%;
+				
+				border: none;
+				 display: flex;
+				  flex-direction: row;
+				  
+				  overflow: hidden;
+				  
+				  /* avoid browser level touch actions */
+				  xtouch-action: none;
+			}
+			
+			#tabCSS, #tabHTML, #tabJS, #tabOutput{
+				/* position: relative;
+				float: left;
+				font-family: "Times New Roman", Times, serif;
+				margin: 0 auto;
+				width: 22%;
+				color: var(--font-color4);
+				
+				overflow: auto; */
+				background-color: var(--bg-color1);
+				display: block;
+				padding: 20px;
+				
+			}
+			
+			#tabJS, #tabCSS, #tabHTML {
+				float: left;
+				overflow: auto;
+				min-width: 40px;
+				width: 300px;
+				border-right: 2px solid var(--bg-color2);
+				
+			
+			}
+			
+			#tabOutput {
+				flex: 1 1 auto;
+			     resizable 
+			    padding: 20px;
+				
+			    width: 600px;
+				
+			    min-height: 400px;
+			    min-width: 40px;
+			   
+			}
+			
+		/*	#tabHTML::-webkit-scrollbar {
+				display: none;
+			}
+			#tabCSS::-webkit-scrollbar {
+				display: none;
+				
+			#tabCSS1::-webkit-scrollbar {
+				display: none;
+			}
+			#tabJS::-webkit-scrollbar {
+				display: none;
+			}
+			#tabOutput::-webkit-scrollbar {
+				display: none;
+			}
+		
+		*/	​
+		
+		textarea {
+			border: 2px red solid;
+		}
+		
+		#js, #css, #html {
+			bottom: 0;
+			background-color: var(--bg-color1);
+			color: var(--font-color4);
+		    position: relative;
+		    width: 100%;
+			height: 32em;
+			border: 1.5px solid var(--font-color3);
+		}
+		
+		#js {
+			bottom: 0;
+		    position: relative;
+		    width: 100%;
+			height: 32em;
+			border: 1.5px var(--font-color3) solid;
+			color: var(--font-color4);
+		}
+
+		iframe {
+		  bottom: 0;
+		  position: relative;
+		  max-width: 100%;
+		  width: 1200px;
+		  min-width: 400px;
+		  overflow: auto;
+		  height: 32em;
+		  background-color: white;
+		  color: black;
+		}
+		
+		
+		@font-face {
+		  font-family: 'Glyphicons Halflings';
+		  src: url('fonts/glyphicons-halflings-regular.eot');
+		  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+		}
+		
+		#widthCon {
+			width: 800px;
+		}
